@@ -33,7 +33,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
         >
-        <MainPage />
+          <MainPage />
         </ScrollView>
       </SafeAreaView>
       </View>
