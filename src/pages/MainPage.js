@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, Dimensions, StyleSheet } from 'react-native';
+import { View, Text, Dimensions, StyleSheet, StatusBar } from 'react-native';
 // Components
 import  Header  from '../components/Header';
 import Search from '../components/Search';

@@ -12,6 +12,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
+  View,
 } from 'react-native';
 
 
@@ -26,19 +27,16 @@ const App = () => {
   
   return (
     <Provider store={store}>
+      <View style={{backgroundColor: '#404040', width: "100%", height: "100%"}}>
+        <StatusBar translucent barStyle='light-content' />
       <SafeAreaView >
-        <StatusBar />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
         >
-          <MainPage />
+        <MainPage />
         </ScrollView>
-        {/* <FlatList
-          data={[1]}
-          renderItem={MainPage}
-          keyExtractor={(item, index) => index.toString()}
-        /> */}
       </SafeAreaView>
+      </View>
     </Provider>
   );
 };
