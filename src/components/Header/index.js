@@ -5,12 +5,13 @@ const { width, height } = Dimensions.get("window");
 
 const Header = ({companyName, companyRespons, appName}) => {
     const upperCaseName = companyName.toUpperCase();
-    const companyHeader = upperCaseName.charAt(0).toLowerCase() + upperCaseName.slice(1);
-    console.log(companyHeader)
+    // const companyHeader = upperCaseName.charAt(0).toLowerCase() + upperCaseName.slice(1);
+
     return (
         <View style={styles.main_wrapper}>
             <Text style={styles.text_header}>
-                {companyHeader}
+                <Text style={styles.first_latter}>r</Text>
+                {upperCaseName}
             </Text>
             <Text style={styles.text}>
                 {companyRespons}
@@ -35,6 +36,9 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#deb887',
+    },
+    first_latter:{
+        fontSize: 40
     }
 
 });

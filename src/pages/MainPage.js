@@ -13,7 +13,7 @@ export const MainPage = () => {
         <View style={styles.container}>
             <View style={styles.top_content}>
                 <Header  
-                    companyName="requestum"
+                    companyName="equestum"
                     companyRespons="web development company"
                     appName="Github search app"
                 />                
