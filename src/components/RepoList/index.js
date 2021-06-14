@@ -34,13 +34,13 @@ const RepoList = () => {
                     <RepoCard />
                 )
             })} */}
+           {!data && <ActivityIndicator size="large" color="#deb887" />}
         </View>
     )
     } else return (
         <View>
             {/* TODO PRELOADER NEED */}
-            <Text>Loading</Text>
-            <ActivityIndicator size="large" color="#deb887" />
+            <Text>You need to type name of user</Text>
         </View>
     );
 }

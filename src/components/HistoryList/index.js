@@ -18,6 +18,8 @@ const { width, height } = Dimensions.get("window");
 
 const HistoryList = ({}) => {
     const dispatch = useDispatch();
+    // I think about to render only some numbers of history data, and
+    //  I can do it but it's not in requirements docs of task so )
     const [history, setHistory] = useState([]);
     const historyData = useSelector(state => state.typedNames);
 

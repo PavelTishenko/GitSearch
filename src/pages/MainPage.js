@@ -79,7 +79,9 @@ const styles = StyleSheet.create({
     divider: {
         height: 1,
         width: width / 1.1,
-        backgroundColor: '#deb887'
+        backgroundColor: '#deb887',
+        marginLeft:"auto",
+        marginRight: 7
     },
     main_content:{
         flex: 2,
