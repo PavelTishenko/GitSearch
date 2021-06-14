@@ -34,10 +34,12 @@ const TInput = ({placeholder}) => {
     const onDataGet = (text) => {
         dispatch(writeName(text));
         setName(text);
-        getUserData(text)
+        if(text.length > 1) {
+            getUserData(text)
             .then(res => {
                 dispatch(loadData(res.data));  
             })
+        }
     };
     useEffect(() => {
         historyData.length && saveData([...savedData, ...historyData]);
